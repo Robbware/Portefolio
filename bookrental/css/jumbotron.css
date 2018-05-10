@@ -1,0 +1,77 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+
+body {
+    padding-top: 3.5rem;
+}
+
+body .jumbotron {
+    min-height: 500px;
+    max-height: 900px;
+    margin-bottom: 0px;
+    position: relative;
+    background: none;
+    color: #DEDDDB;
+}
+
+.jumbotron .bg {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/jumbotron.jpg");
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.jumbotron-text {
+    padding-left: 5.5rem;
+}
+
+.jumbotron-text-style {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.vertical-center {
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    /* align the inline(-block) elements horizontally */
+    display: flex;
+    align-items: center;
+    /* remove the gap between inline(-block) elements */
+}
+
+.vertical-center:before {
+    /* create a full-height inline block pseudo=element */
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.vertical-center>.container {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    /* vertical alignment of the inline element */
+    /* reset the font property */
+    font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sign-up {
+    min-height: 500px;
+    max-height: 900px;
+    margin-bottom: 0px;
+    background: none;
+    color: #DEDDDB;
+}
