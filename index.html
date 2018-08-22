@@ -128,10 +128,6 @@
                         <img src="img/portfolio/safe.png" class="img-responsive" alt="Circus tent">
                     </a>
                 </div>
-                <!-- remove after updating -->
-                <div class="col-sm-4 portfolio-item">
-                </div>
-                
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -140,6 +136,28 @@
                             </div>
                         </div>
                         <img src="img/portfolio/safe.png" class="img-responsive" alt="Game controller">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="Atmosfear">
+                    </a>
+                </div>
+
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/game.png" class="img-responsive" alt="TRIBE">
                     </a>
                 </div>
                  <!--
@@ -184,7 +202,7 @@
             <div class="row">
                 <div class="text-center">
                     <p>
-                    	Hello, I'm a game, software and web developer with a huge passion for programming. Right now I'm primarly working with Unity 5 but I've had contact with several different programming languages in the past and I'm very used to adapting myself to what the situation requires. You can find a few examples of my work above (I'm still adding past projects) and my contact information below.
+                    	Hello! I'm a game and software developer with a huge passion for programming. I'm eagerly looking for new challenges to tackle and I'm always interested in learning new technologies. Above are a few examples of my work so far but I'm always looking for new things to create and be a part of! I started learning how to program over 10 years ago at home and haven't stopped ever since! Recently, in 2017, graduated from a Game Design Bachelor degree which helped me obtain a grasp on the different game development concepts and areas of work, allowing me to acquire some experience with different pipelines and people.<br> I'm always trying to be better and to learn as much as I can.
                     </p>
                 </div>
             </div>
@@ -248,7 +266,7 @@
     -->
 
     <!-- Footer -->
-    <footer class="text-center">
+    <footer class="text-center" id="contact">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
@@ -281,7 +299,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Robbware 2017
+                        Copyright &copy; Robbware 2017-
+                        <script>
+                        var n = new Date().getFullYear();
+                        document.write(n);
+                        </script>
                     </div>
                 </div>
             </div>
@@ -465,21 +487,26 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Fear Reality</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/fearreality.png" class="img-responsive img-centered" alt="">
+                            <p>An Android/iOS VR game where you have to face your deepest fears in order to progress. In order to complete the game you have to face Aracnophobia, Arcophobia, Bathophobia, Claustrophobia and Lynophobia. Made in 36h.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="#">#</a>
+                                <li>Engine:
+                                    <strong><a href="#">Unity 5</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="#">April 2014</a>
+                                    <strong><a href="#">April 2017</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="#">Web Development</a>
+                                    <strong><a href="#">Game Development</a>
+                                    </strong>
+                                </li>
+                                <li>Download:
+                                    <strong>
+                                        <a href="">Android APK</a> (Requires Google Cardboard)
                                     </strong>
                                 </li>
                             </ul>
@@ -502,21 +529,27 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>TRIBE</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/tribe.png" class="img-responsive img-centered" alt="">
+                            <p>A Doodle-god like game where the player has to obtain and combine several different elements to obtain the right elements in order for the player character to return home. The catch is that the player has only 9 in-game days that get shorter day after day, starting at 180 seconds, and every time a new day is up you forget all of your combinations so far and the final goal changes. <br> Made in under 24h.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                   <strong><a href="#">#</a>
+                                <li>Engine:
+                                   <strong><a href="#">Unity 5</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="#">April 2014</a>
+                                    <strong><a href="#">May 2015</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong><a href="#">Web Development</a>
+                                    <strong><a href="#">Game Development</a>
+                                    </strong>
+                                </li>
+                                <li>
+                                    Download:
+                                    <strong>
+                                        N/A
                                     </strong>
                                 </li>
                             </ul>
