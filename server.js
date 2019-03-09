@@ -10,6 +10,6 @@ app.get('/', function(req, res){
 })
 
 app.use(express.static(path.join(__dirname, 'public/')));
-app.listen(8080, function() {
-    console.log("Listening to server on port 8080");
+app.listen(80, function() {
+    console.log("Listening to server on port 80");
 });
