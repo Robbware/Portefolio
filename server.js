@@ -17,8 +17,7 @@ app.get('/', function(req, res){
 })
 
 app.get('/visited', function(req, res) {
-    res.send("Visited count: " + totalVisitors);
-    res.send("From Facebook: " + facebookVisitors);
+    res.send("Visited count: " + totalVisitors + "\n Facebook visitors: " + facebookVisitors);
 })
 
 app.use(express.static(path.join(__dirname, 'public/')));
