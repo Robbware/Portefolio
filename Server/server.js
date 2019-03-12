@@ -8,7 +8,7 @@ var facebookVisitors = 0;
 require('./routes')(app, {});
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'))
+    res.sendFile(path.join(__dirname, '../index.html'))
     var fbclid = req.query.fbclid;
 
     if (fbclid) {
@@ -22,7 +22,7 @@ app.get('/visited', function(req, res) {
     res.send("Visited count: " + totalVisitors + "\n Facebook visitors: " + facebookVisitors);
 })
 
-app.use(express.static(path.join(__dirname, 'public/')));
+app.use(express.static(path.join(__dirname, '../public/')));
 app.listen(80, function() {
     console.log("Listening to server on port 80");
 });
